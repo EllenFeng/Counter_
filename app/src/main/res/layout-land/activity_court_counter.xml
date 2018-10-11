@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/team1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_score1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="@string/count1"
+                android:textSize="80sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:onClick="add_1_3"
+                    android:paddingBottom="8dp"
+                    android:text="@string/add_3"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:onClick="add_1_2"
+                    android:paddingBottom="8dp"
+                    android:text="@string/add_2"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:onClick="add_1_1"
+                    android:text="@string/add_1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="@android:color/darker_gray"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/team2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/text_score2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="@string/count2"
+                android:textSize="80sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:onClick="add_2_3"
+                    android:paddingBottom="8dp"
+                    android:text="@string/add_3"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:onClick="add_2_2"
+                    android:paddingBottom="8dp"
+                    android:text="@string/add_2"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="0dp"
+                    android:onClick="add_2_1"
+                    android:text="@string/add_1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="reset"
+        android:text="@string/btn_reset"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
